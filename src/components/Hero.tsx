@@ -15,7 +15,7 @@ const Hero = () => {
     {/* Picture Section */}
     <div className="relative max-w-full">
       <img
-        src="/profile.png?auto=format&fit=crop&q=80&w=300&h=300"
+        src="/src/images/profile.png?auto=format&fit=crop&q=80&w=300&h=300"
         alt="Profile"
         className="rounded-full w-40 h-40 sm:w-96 sm:h-96 object-cover border-4 border-white shadow-lg transform hover:scale-105 transition-transform duration-300"
         />
