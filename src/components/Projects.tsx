@@ -23,7 +23,7 @@ const Projects = () => {
       description: 'Une solution pour la gestion des établissements',
       image: '/thirdProject.png?auto=format&fit=crop&q=80&w=800',
       tech: ['Spring Boot', 'Postman'],
-      github: '#',
+      github: 'https://github.com/Cheikhibra10/spring',
       demo: '#'
     }
   ];
