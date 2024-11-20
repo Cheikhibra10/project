@@ -5,7 +5,7 @@ const Projects = () => {
     {
       title: 'Gestion des Dettes',
       description: 'Une solution pour gestion des dettes avec React, Node.js, NestJs, Postgres et MongoDB',
-      image: 'secondProject.png?auto=format&fit=crop&q=80&w=800',
+      image: '/secondProject.png?auto=format&fit=crop&q=80&w=800',
       tech: ['React', 'Node.js', 'NestJs', 'Postgres', 'Docker', 'MongoDB', 'Twilio'],
       github: 'https://github.com/Cheikhibra10/JS.git',
       demo: '#'
@@ -13,7 +13,7 @@ const Projects = () => {
     {
       title: 'Site de Fast-Food',
       description: 'Une solution pour faire une commande sans se déplacer',
-      image: 'firstProject.png?auto=format&fit=crop&q=80&w=800',
+      image: '/firstProject.png?auto=format&fit=crop&q=80&w=800',
       tech: ['Html', 'Css'],
       github: 'https://github.com/Cheikhibra10/cours-html-css.git',
       demo: '#'
@@ -21,7 +21,7 @@ const Projects = () => {
     {
       title: 'Gestion de Scolarité Api',
       description: 'Une solution pour la gestion des établissements',
-      image: 'thirdProject.png?auto=format&fit=crop&q=80&w=800',
+      image: '/thirdProject.png?auto=format&fit=crop&q=80&w=800',
       tech: ['Spring Boot', 'Postman'],
       github: '#',
       demo: '#'
