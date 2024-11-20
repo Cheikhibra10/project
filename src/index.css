@@ -53,6 +53,23 @@ input, textarea {
     transform: translate(0px, 0px) scale(1);
   }
 }
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.typewriter-effect {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typewriter 3s steps(30) 1s forwards;
+  font-family: Poppins, monospace;
+}
 
 .animate-blob {
   animation: blob 7s infinite;
