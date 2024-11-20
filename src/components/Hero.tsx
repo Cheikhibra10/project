@@ -2,7 +2,7 @@ import { Github, Linkedin, Twitter, Code2 } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+    <section id="home" className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900">
       {/* Background decoration */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
@@ -32,10 +32,10 @@ const Hero = () => {
       <h2 className="text-lg text-indigo-600 font-semibold mb-2 tracking-wide uppercase">
                 Bonjour, Je suis
               </h2>
-              <h1 className="text-3xl md:text-6xl font-bold text-gray-900 mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 to-purple-600 bg-clip-text text-transparent">
+              <h1 className="text-3xl md:text-6xl font-bold  mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 to-purple-600 bg-clip-text text-transparent">
                 Cheikh Ibra Mbengue
               </h1>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+              <h2 className="text-3xl font-bold text-gray-700 mb-6">
                 Full-Stack Developer
               </h2>
               <p className="text-xl text-gray-600 mb-8 max-w-2xl leading-relaxed">

@@ -14,6 +14,27 @@ input, textarea {
   @apply border-gray-300 focus:ring-indigo-500 focus:border-indigo-500;
 }
 
+@layer components {
+  .dark .bg-white {
+    background-color: #1a202c; /* Dark background for white */
+  }
+
+  .dark .bg-gray-50{
+    background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+  }
+
+  .dark .text-gray-800 {
+    color: #e2e8f0; /* Light text color for dark mode */
+  }
+ 
+  .dark .text-gray-900 {
+    color: #e2e8f0; /* Light text color for dark mode */
+  }
+
+  .dark .text-gray-600 {
+    color: #e2e8f0; /* Light text color for dark mode */
+  }
+}
 @keyframes blob {
   0% {
     transform: translate(0px, 0px) scale(1);
