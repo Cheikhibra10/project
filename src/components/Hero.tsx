@@ -104,7 +104,12 @@ const Hero = () => {
                   </span>
                 </button>
               </a>
-              <a href="#contact">
+              <a href="#contact" onClick={(e) => {
+                e.preventDefault();
+                window.dispatchEvent(new CustomEvent('navigateToSection', { 
+                  detail: { section: 'contact' } 
+                }));
+              }}>
                 <button className="px-8 py-3 bg-white text-gray-800 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:translate-y-[-4px] active:scale-95 border border-gray-200">
                   Contactez-moi
                 </button>
