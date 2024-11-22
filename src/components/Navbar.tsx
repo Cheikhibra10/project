@@ -22,7 +22,17 @@ const Navbar: React.FC<NavbarProps> = ({ toggleDarkMode, isDarkMode }) => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
+      if (id === 'home') {
+        window.dispatchEvent(new Event('navigateToHome'));
+      } else {
+        // Dispatch a custom event for section navigation
+        window.dispatchEvent(new CustomEvent('navigateToSection', { 
+          detail: { section: id } 
+        }));
+      }
       element.scrollIntoView({ behavior: 'smooth' });
+      // Update URL without jumping
+      window.history.pushState({}, '', `#${id}`);
       setIsOpen(false);
     }
   };
@@ -101,12 +111,12 @@ const Navbar: React.FC<NavbarProps> = ({ toggleDarkMode, isDarkMode }) => {
               {item.text}
             </button>
           ))}
-        <button
-              onClick={toggleDarkMode}
-              className="space-y-1 p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-            >
-              {isDarkMode ? <Sun className="h-6 w-6" /> : <Moon className="h-6 w-6" />}
-            </button>
+          <button
+            onClick={toggleDarkMode}
+            className="space-y-1 p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+          >
+            {isDarkMode ? <Sun className="h-6 w-6" /> : <Moon className="h-6 w-6" />}
+          </button>
         </div>
       </div>
     </nav>
