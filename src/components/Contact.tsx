@@ -17,12 +17,12 @@ const Contact = () => {
   useEffect(() => {
     const handleNavigation = (event: Event) => {
       const customEvent = event as CustomEvent;
-      console.log('Navigation event received:', customEvent.detail);
       if (customEvent.detail?.section === 'contact') {
-        controls.start("hidden").then(() => {
+        controls.set("hidden");
+        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
           controls.start("visible");
-          document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-        });
+        }, 100);
       }
     };
 
