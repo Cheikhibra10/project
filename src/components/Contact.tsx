@@ -6,6 +6,13 @@ import { motion, useInView, useAnimation } from 'framer-motion';
 const Contact = () => {
   const controls = useAnimation();
   const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: false });
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    }
+  }, [isInView, controls]);
 
   useEffect(() => {
     const handleNavigation = async (event: Event) => {
